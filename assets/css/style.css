@@ -54,7 +54,16 @@ h1 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-
+/*navbar stuff*/
+nav {
+    position: absolute;
+    color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: o 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+}
 
 /* Main content */
 main {
