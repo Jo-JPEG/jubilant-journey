@@ -57,18 +57,19 @@ h1 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/*navbar stuff*/
+/* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    color: #ffffff;
+    background-color: #ffffff;
     width: 100%;
     left: 0;
-    padding: o 1rem;
+    padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
 }
 
+/* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -94,9 +95,9 @@ footer {
     background-color: orange;
 }
 
-/*Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px){
-    /*header */
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
     nav {
         display: block;
         position: relative;
@@ -104,7 +105,35 @@ footer {
         width: fit-content;
         padding-right: 1rem;
     }
+
     #menu {
         display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid #3a3a3a;
     }
 }
