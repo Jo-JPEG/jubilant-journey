@@ -142,6 +142,9 @@ main {
     margin: 5px 0;
 }
 
+#circle-cover-bg {
+    background: url("../images/reasons-image.webp") no-repeat center top/cover;
+}
 
 /* Footer */
 #social-networks {
